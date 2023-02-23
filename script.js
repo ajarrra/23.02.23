@@ -45,6 +45,28 @@ addParagraphBtn.addEventListener("click", function () {
 
 
 
+let list = document.createElement("ul"); //создает объект
+document.body.append(list);
+for (let i = 0; i <= 10; i++) {
+    let listItem = document.createElement("li");
+    listItem.textContent = "example" + i;
+    list.append(listItem);
+}
+
+let addList = document.querySelector("#add-list"); //кнопка которая добавляет элементы
+addList.addEventListener("click", function () {
+    let newList = document.createElement("li");
+    newList.textContent = "lorem";
+    list.append(newList);
+});
+
+
+
+let example1Btn = document.querySelector("#example-1");
+let exampleParagraph = document.querySelector("#example-1-target")
+
+
+
 
 
 
