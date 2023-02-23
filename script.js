@@ -3,6 +3,8 @@ example1.textContent = "🤗" +example1.textContent + "😋";
 console.log(example1);
 
 let example2 = document.querySelector(".example-class");
+example2.style.backgroundColor = "red";
+example2.style.color = "white";
 console.log(example2);
 
 
