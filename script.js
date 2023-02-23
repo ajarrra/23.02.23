@@ -9,7 +9,7 @@ console.log(example2);
 
 
 let example3 = document.querySelector("#example-id");
-example3.style.backgroundImage = "url(photo.avif)" ;
+example3.style.backgroundImage = "url(photo.avif)";
 console.log(example3);
 
 let example4 = document.querySelector("p:nth-child(4");
@@ -22,17 +22,29 @@ console.log(example4)
 
 
 //события
-let helloBtn = document.querySelector("#hello");
-helloBtn.addEventListener("click", function() { //клик , кторая ждет
-  alert("hello!");//надпись которая выводит
+let helloBtn = document.querySelector("#hello");//НАШЛИ КНОПКУ
+helloBtn.addEventListener("click", function () { //клик , кторая ждет(когда нажимаешь срабатывает)
+    alert("hello!");//надпись которая выводит
 })
 
 //кнопку дать значение
 
 let byeBth = document.querySelector("#bye");
-byeBth.addEventListener("click", function(){
+byeBth.addEventListener("mousemove", function () {//когда наводишь срабатываешь
     alert("Bye");
 });
+
+
+let addParagraphBtn = document.querySelector("#add-paragraph");
+addParagraphBtn.addEventListener("click", function () {
+    let article = document.querySelector("article");
+    let newParagraph = document.createElement("p");
+    newParagraph = textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis saepe a quibusdam, doloribus iure  dolores";
+    article.append(newParagraph);
+})
+
+
+
 
 
 
