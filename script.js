@@ -63,7 +63,16 @@ addList.addEventListener("click", function () {
 
 
 let example1Btn = document.querySelector("#example-1");
-let exampleParagraph = document.querySelector("#example-1-target")
+let example2Btn = document.querySelector("#example-2");
+let example1Paragraph = document.querySelector("#example-1-target")
+
+example1Btn.addEventListener("click" , function(){
+    example1Paragraph.className = "hidden"; //classname меняет название класса
+});
+example2Btn.addEventListener("click", function(){
+    example1Paragraph.className = "";
+})
+
 
 
 
