@@ -66,10 +66,10 @@ let example1Btn = document.querySelector("#example-1");
 let example2Btn = document.querySelector("#example-2");
 let example1Paragraph = document.querySelector("#example-1-target")
 
-example1Btn.addEventListener("click" , function(){
+example1Btn.addEventListener("click", function () {
     example1Paragraph.className = "hidden"; //classname меняет название класса
 });
-example2Btn.addEventListener("click", function(){
+example2Btn.addEventListener("click", function () {
     example1Paragraph.className = "";
 })
 
@@ -77,7 +77,7 @@ example2Btn.addEventListener("click", function(){
 //одна кнопка если есть уд если нет доб
 let toggleBtn = document.querySelector("#toggle");
 let toggleParagraph = document.querySelector("#toggle-target");
-toggleBtn.addEventListener("click", function(){
+toggleBtn.addEventListener("click", function () {
     toggleParagraph.classList.toggle("hidden");  //если нет доб если есть удаляет  
 });
 
