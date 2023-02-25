@@ -35,12 +35,12 @@ byeBth.addEventListener("mousemove", function () {//когда наводишь 
 });
 
 
-let addParagraphBtn = document.querySelector("#add-paragraph");
-addParagraphBtn.addEventListener("click", function () {
-    let article = document.querySelector("article");
-    let newParagraph = document.createElement("p");
+let addParagraphBtn = document.querySelector("#add-paragraph");// в этой переменной лежит кнопка добавить параграф
+addParagraphBtn.addEventListener("click", function () { //слушатель событий на клик , когда нажимаешь на кнопку выполняется функция
+    let article = document.querySelector("article");//находим эл куда мы хотим добавить новый эл
+    let newParagraph = document.createElement("p");// потом мы создаем этот элемент (можем поменять стили , содержимое)
     newParagraph = textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis saepe a quibusdam, doloribus iure  dolores";
-    article.append(newParagraph);
+    article.append(newParagraph);//потом добавляем туда куда мы хотим ее добавить
 })
 
 
@@ -62,16 +62,18 @@ addList.addEventListener("click", function () {
 
 
 //две кнопки одна уд др добавляет
-let example1Btn = document.querySelector("#example-1");
-let example2Btn = document.querySelector("#example-2");
-let example1Paragraph = document.querySelector("#example-1-target")
+let example1Btn = document.querySelector("#example-1");//находим первую кнопку
+let example2Btn = document.querySelector("#example-2");//находим вторую кнопку
+let example1Paragraph = document.querySelector("#example-1-target") //находим параграф с кот будем работать 
 
-example1Btn.addEventListener("click", function () {
+example1Btn.addEventListener("click", function () {//при нажатии на первую кнопку , выполнить функцию где берем параграф и задаем класс hidden
     example1Paragraph.className = "hidden"; //classname меняет название класса
 });
-example2Btn.addEventListener("click", function () {
+example2Btn.addEventListener("click", function () { //тут при нажатии выполняется функция где берем параграф и задаем ему пустой класс ""
     example1Paragraph.className = "";
 })
+
+//hidded в css скрываем 
 
 
 //одна кнопка если есть уд если нет доб
