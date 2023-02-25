@@ -21,7 +21,7 @@ example4.style.margin = "30px";
 console.log(example4)
 
 
-//события
+//СОБЫТИЯ 
 let helloBtn = document.querySelector("#hello");//НАШЛИ КНОПКУ
 helloBtn.addEventListener("click", function () { //клик , кторая ждет(когда нажимаешь срабатывает)
     alert("hello!");//надпись которая выводит
@@ -86,3 +86,15 @@ toggleBtn.addEventListener("click", function () {
 
 
 
+
+
+let worldBtn = document.querySelector ("#world");//создали
+let darckBtn = document.querySelector("#darck");//создали
+let babyPar = document.querySelector("#baby");//создали надпись кот будет высвечивать при нажатии
+
+worldBtn.addEventListener ("click" , function(){
+babyPar.className = "lox";  
+});
+darckBtn.addEventListener("click", function (){
+    babyPar.className = "";
+})

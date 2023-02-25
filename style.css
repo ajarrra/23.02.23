@@ -9,3 +9,12 @@ p{
     /*transition: opacity 300ms;*/
     transition: transform 500ms;
 }
+
+.lox {
+    opacity: 0;
+    transform: scale(0);
+}
+
+p .lox{
+    transition: opacity 300ms;
+}
